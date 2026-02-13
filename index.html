@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Frogger Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="arcade-container">
+        <div class="header">
+            <h1>NEON<span class="glitch">FROG</span></h1>
+            <div id="scoreBoard">SCORE: <span id="score">0</span></div>
+        </div>
+
+        <canvas id="gameCanvas" width="500" height="600"></canvas>
+
+        <div id="gameOver" class="overlay hidden">
+            <div class="modal">
+                <h2>SYSTEM FAILURE</h2>
+                <p>FROG_UNIT_TERMINATED</p>
+                <button onclick="resetGame()">REBOOT</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
